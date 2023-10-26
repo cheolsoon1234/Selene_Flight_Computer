@@ -13,7 +13,12 @@ void setup_BMP() {
 }
 
 void BMP_OP() {
+    // sensor operation
+    Temperature = bmp.readTemperature();
     Pressure = bmp.readPressure();
     Altitude = bmp.readAltitude();
+
+    // LOG
+    LOG_BMP(Temperature, Pressure, Altitude);
 }
 

@@ -6,6 +6,7 @@
 
 #include <SPI.h>
 #include <SD.h>
+#include "Selene_Common\\Selene_Time.c"
 #define SD_PIN 4;
 
 File myFile;
